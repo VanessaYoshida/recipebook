@@ -1,9 +1,10 @@
-var config = {
-  apiKey: "AIzaSyAG9aZNftX5d1TDcfRNOVeL2-tE7yZoOOs",
-  authDomain: "recipebook-squad4.firebaseapp.com",
-  databaseURL: "https://recipebook-squad4.firebaseio.com",
-  projectId: "recipebook-squad4",
-  storageBucket: "recipebook-squad4.appspot.com",
-  messagingSenderId: "744496946691"
-};
-firebase.initializeApp(config);  
+
+  let config = {
+    apiKey: "AIzaSyDfVIbIY6jwsxYEOC5g17jYCOW4DK-esPM",
+    authDomain: "teste-e1056.firebaseapp.com",
+    databaseURL: "https://teste-e1056.firebaseio.com",
+    projectId: "teste-e1056",
+    storageBucket: "teste-e1056.appspot.com",
+    messagingSenderId: "18854278537"
+  };
+  firebase.initializeApp(config);

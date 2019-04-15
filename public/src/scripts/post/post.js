@@ -2,6 +2,14 @@ let database = firebase.database();
 let USER_ID = window.location.search.match(/\?id=(.*)/)[1];
 
 $(document).ready(function() {
+    database.ref("users/"+USER_ID).once("value")
+    .then(function(snapshot){
+        let userInfo = snapshot.val();
+        
+            $("#welcome-name").text(userInfo.name);
+    }).catch((error) => {
+        $("#welcome-name").html("descubra novas receitas e compartilhe");
+        }); 
 
     let getPostsBD = () => {
         database.ref('/posts/'+ USER_ID).once('value')
